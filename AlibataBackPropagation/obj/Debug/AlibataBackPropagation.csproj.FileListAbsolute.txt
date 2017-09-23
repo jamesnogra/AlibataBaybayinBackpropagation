@@ -7,3 +7,7 @@ c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\Alib
 c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\obj\Debug\AlibataBackPropagation.csproj.GenerateResource.Cache
 c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\obj\Debug\AlibataBackPropagation.exe
 c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\obj\Debug\AlibataBackPropagation.pdb
+C:\Users\James\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\bin\Debug\legend.jpg
+C:\Users\James\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\bin\Debug\A.bmp
+C:\Users\James\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\bin\Debug\E.bmp
+C:\Users\James\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\bin\Debug\O.bmp
