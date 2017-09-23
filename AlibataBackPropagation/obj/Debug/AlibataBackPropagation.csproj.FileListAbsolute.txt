@@ -1,0 +1,9 @@
+c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\bin\Debug\AlibataBackPropagation.exe.config
+c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\bin\Debug\AlibataBackPropagation.exe
+c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\bin\Debug\AlibataBackPropagation.pdb
+c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\obj\Debug\AlibataBackPropagation.csprojResolveAssemblyReference.cache
+c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\obj\Debug\AlibataBackPropagation.Form1.resources
+c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\obj\Debug\AlibataBackPropagation.Properties.Resources.resources
+c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\obj\Debug\AlibataBackPropagation.csproj.GenerateResource.Cache
+c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\obj\Debug\AlibataBackPropagation.exe
+c:\users\james\documents\visual studio 2017\Projects\AlibataBackPropagation\AlibataBackPropagation\obj\Debug\AlibataBackPropagation.pdb
