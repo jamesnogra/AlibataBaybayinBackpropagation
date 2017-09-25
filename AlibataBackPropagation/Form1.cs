@@ -17,10 +17,10 @@ namespace AlibataBackPropagation
     {
         NeuralNet bp;
         Bitmap drawerBitmap;
-        int totalEpochs = 20000;
+        int totalEpochs = 2000;
         char[] allCharaters = new char[3] { 'A', 'E', 'O' };
-        byte[,,] allBinaryImages = new byte[3, 30, 64];
-        byte[] inputImage = new byte[64];
+        byte[,,] allBinaryImages = new byte[3, 30, 256];
+        byte[] inputImage = new byte[256];
         bool paintFlag = false;
         byte brushWidth = 25;
 
@@ -30,7 +30,7 @@ namespace AlibataBackPropagation
             drawerBitmap = new Bitmap(drawer.Width, drawer.Height);
             drawer.Image = drawerBitmap;
             legend.Image = (Bitmap)Image.FromFile(@"legend.jpg");
-            bp = new NeuralNet(64, 4, 4);
+            bp = new NeuralNet(256, 4, 4);
         }
 
         private void train_Click(object sender, EventArgs e)
@@ -99,7 +99,8 @@ namespace AlibataBackPropagation
             {
                 for (int x=0; x<10; x++)
                 {
-                    tempImage = (Bitmap)Image.FromFile(@"AlibataTrainingSet/" + allCharaters[i] + x + " (32x32) (8x8).jpg");
+                    //tempImage = (Bitmap)Image.FromFile(@"AlibataTrainingSet/" + allCharaters[i] + x + " (32x32) (8x8).jpg");
+                    tempImage = (Bitmap)Image.FromFile(@"AlibataTrainingSetNew/" + allCharaters[i] + x + " (16x16).jpg");
                     tempImageCounter = 0;
                     tempStr = "";
                     for (int y = 0; y < tempImage.Width; y++)
@@ -124,8 +125,8 @@ namespace AlibataBackPropagation
         private void test_Click(object sender, EventArgs e)
         {
             Bitmap tempImage = drawerBitmap;
-            Bitmap resizedImage = resizeImage(ref tempImage, 8, 8);
-            resizedImage.Save("temp.bmp", ImageFormat.Bmp);
+            Bitmap resizedImage = resizeImage(ref tempImage, 16, 16);
+            //resizedImage.Save("temp.bmp", ImageFormat.Bmp);
             //drawer.Image = resizedImage;
             int tempImageCounter = 0;
             string tempStr = "";
@@ -147,6 +148,7 @@ namespace AlibataBackPropagation
                 }
                 tempStr += "\n";
             }
+            //MessageBox.Show(tempStr);
 
             for (int x=0; x<inputImage.Length; x++)
             {
