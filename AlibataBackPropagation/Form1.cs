@@ -156,7 +156,7 @@ namespace AlibataBackPropagation
                 bp.setInputs(x, inputImage[x]);
             }
             bp.run();
-            resultLabel.Text = Math.Round(bp.getOuputData(0), 4) + " " + Math.Round(bp.getOuputData(1), 4) + " " + Math.Round(bp.getOuputData(2), 4) + " " + Math.Round(bp.getOuputData(3), 4);
+            resultLabel.Text = string.Format("{0:f4}", bp.getOuputData(0)) + " " + string.Format("{0:f4}", bp.getOuputData(1)) + " " + string.Format("{0:f4}", bp.getOuputData(2)) + " " + string.Format("{0:f4}", bp.getOuputData(3));
             if ( Math.Round(bp.getOuputData(0)) == 0 && Math.Round(bp.getOuputData(1)) == 0 && Math.Round(bp.getOuputData(2)) == 0 && Math.Round(bp.getOuputData(3)) == 1)
             {
                 resultPicBox.Image = (Bitmap)Image.FromFile(@"A.bmp");

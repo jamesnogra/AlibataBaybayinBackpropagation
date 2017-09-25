@@ -145,12 +145,13 @@
             // 
             // stopTraining
             // 
+            this.stopTraining.BackColor = System.Drawing.Color.Transparent;
             this.stopTraining.Location = new System.Drawing.Point(472, 61);
             this.stopTraining.Name = "stopTraining";
             this.stopTraining.Size = new System.Drawing.Size(98, 23);
             this.stopTraining.TabIndex = 7;
             this.stopTraining.Text = "Stop Training";
-            this.stopTraining.UseVisualStyleBackColor = true;
+            this.stopTraining.UseVisualStyleBackColor = false;
             this.stopTraining.Click += new System.EventHandler(this.stopTraining_Click);
             // 
             // Form1
