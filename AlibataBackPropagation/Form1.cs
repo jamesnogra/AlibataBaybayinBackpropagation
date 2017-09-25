@@ -17,7 +17,7 @@ namespace AlibataBackPropagation
     {
         NeuralNet bp;
         Bitmap drawerBitmap;
-        int totalEpochs = 2000;
+        int totalEpochs = 20000;
         char[] allCharaters = new char[3] { 'A', 'E', 'O' };
         byte[,,] allBinaryImages = new byte[3, 30, 256];
         byte[] inputImage = new byte[256];
@@ -45,10 +45,11 @@ namespace AlibataBackPropagation
             train.Visible = true;
         }
 
+        int currentEpoch;
         private void beginTraining()
         {
             decimal totalPercent;
-            for (int x=0; x<totalEpochs; x++)
+            for (currentEpoch = 0; currentEpoch < totalEpochs; currentEpoch++)
             {
                 for (int i=0; i<allBinaryImages.GetLength(0); i++)
                 {
@@ -83,7 +84,7 @@ namespace AlibataBackPropagation
                     }
                 }
                 Application.DoEvents();
-                totalPercent = (decimal)((decimal)(x+1) / (decimal)totalEpochs * (decimal)100);
+                totalPercent = (decimal)((decimal)(currentEpoch + 1) / (decimal)totalEpochs * (decimal)100);
                 trainProgressBar.Value = (int)totalPercent;
                 //MessageBox.Show("Val: " + x + " and " + totalEpochs + "\ndiv: "+ totalPercent);
             }
@@ -221,6 +222,11 @@ namespace AlibataBackPropagation
             g.FillRectangle(myBrush, 0, 0, drawer.Width, drawer.Height);
             drawer.Image = drawerBitmap;
             g.Dispose();
+        }
+
+        private void stopTraining_Click(object sender, EventArgs e)
+        {
+            currentEpoch = totalEpochs;
         }
     }
 }
